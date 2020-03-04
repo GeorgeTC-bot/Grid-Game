@@ -114,7 +114,7 @@ function draw(){
   }
 
   //respawn if below 620 y-pos
-  if(player.y >= 620){
+  if(player.y >= 620 && life > 0){
     gamestate = "respawn";
   }
     

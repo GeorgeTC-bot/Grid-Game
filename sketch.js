@@ -135,7 +135,8 @@ function draw(){
   if(mousePressedOver(scr) && mouY <= 530){
     Click();
   }
-  gravity();
+  gravity(sands,sandGroup,true);
+  gravity(fluid,fluidGroup,false)
   if(framecount % 50 === 0){
     open();
   }
